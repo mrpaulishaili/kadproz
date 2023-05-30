@@ -1,0 +1,52 @@
+---
+import Container from '../shared/Container.astro';
+
+const processess = [
+  {
+    illustrarion: '/images/Buyer-and-Seller-makes-and-agrees-to-a-deal-5.jpg',
+    description: 'Buyer and Seller makes and agrees to a deal',
+  },
+  {
+    illustrarion: '/images/Buyer-and-Seller-makes-and-agrees-to-a-deal-2.jpg',
+    description: 'Buyer pays on Kadproz',
+  },
+  {
+    illustrarion: '/images/Buyer-and-Seller-makes-and-agrees-to-a-deal-3.jpg',
+    description: 'Seller delivers goods / services',
+  },
+  {
+    illustrarion: '/images/Buyer-and-Seller-makes-and-agrees-to-a-deal-4.jpg',
+    description: 'Buyers approves and gives code to seller',
+  },
+  {
+    illustrarion: '/images/Buyer-and-Seller-makes-and-agrees-to-a-deal-6.jpg',
+    description: 'Kadproz pays the sellers',
+  },
+];
+---
+
+<section class="py-6">
+  <Container>
+    <h2
+      class="mb-7 text-center text-3xl font-syne font-bold md:text-4xl lg:text-5xl"
+    >
+      Here is how it works
+    </h2>
+    <div class="grid md:grid-cols-5 gap-3">
+      {
+        processess.map((process, index) => (
+          <div class="flex py-3 bg-gray-100 rounded-xl flex-shrink-0 flex-col justify-center items-center gap-2">
+            <img
+              src={process.illustrarion}
+              alt=""
+              class="w-40 h-40 object-contain rounded-xl"
+            />
+            <p class="text-sm font-bold text-center px-2">
+              {process.description}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </Container>
+</section>

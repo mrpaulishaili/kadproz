@@ -1,15 +1,205 @@
 ---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import BuyBulk from '../components/sections/BuyBulk.astro';
+import CallToAction from '../components/sections/CallToAction.astro';
+import Hero from '../components/sections/Hero.astro';
+import HowItWorks from '../components/sections/HowItWorks.astro';
+import TransactSafely from '../components/sections/TransactSafely.astro';
+import UseEscrow from '../components/sections/UseEscrow.astro';
+import WhyUs from '../components/sections/WhyUs.astro';
+import WorldPartnership from '../components/sections/WorldPartnership.astro';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Search Engine Optimisation by Rank Math - https://s.rankmath.com/home -->
+    <title>Home | Kadproz Escrow Services</title>
+    <meta
+      name="description"
+      content="Use of the Best System and Infrastructure in Africa"
+    />
+    <meta
+      name="robots"
+      content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+    />
+    <link rel="canonical" href="https://kadproz.com/" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Home | Kadproz Escrow Services" />
+    <meta
+      property="og:description"
+      content="Use of the Best System and Infrastructure in Africa"
+    />
+    <meta property="og:url" content="https://kadproz.com/" />
+    <meta property="og:site_name" content="KADPROZ" />
+    <meta property="og:updated_time" content="2023-05-25T10:29:04+01:00" />
+    <meta
+      property="og:image"
+      content="https://kadproz.com/wp-content/uploads/2023/05/Buy-premium-Items-worry-free-4.png"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://kadproz.com/wp-content/uploads/2023/05/Buy-premium-Items-worry-free-4.png"
+    />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:image:alt" content="Kadproz escrow services" />
+    <meta property="og:image:type" content="image/png" />
+    <meta
+      property="article:published_time"
+      content="2023-05-03T15:15:31+01:00"
+    />
+    <meta
+      property="article:modified_time"
+      content="2023-05-25T10:29:04+01:00"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Home | Kadproz Escrow Services" />
+    <meta
+      name="twitter:description"
+      content="Use of the Best System and Infrastructure in Africa"
+    />
+    <meta name="twitter:site" content="@kadprozltd" />
+    <meta name="twitter:creator" content="@kadprozltd" />
+    <meta
+      name="twitter:image"
+      content="https://kadproz.com/wp-content/uploads/2023/05/Buy-premium-Items-worry-free-4.png"
+    />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Abdulkadir Abdullahi" />
+    <meta name="twitter:label2" content="Time to read" />
+    <meta name="twitter:data2" content="2 minutes" />
+
+    <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Kadproz Escrow Services » Feed"
+      href="https://kadproz.com/feed/"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Kadproz Escrow Services » Comments Feed"
+      href="https://kadproz.com/comments/feed/"
+    />
+
+    <!-- Google Analytics snippet added by Site Kit -->
+    <script
+      type="text/javascript"
+      src="https://www.googletagmanager.com/gtag/js?id=UA-268062856-1"
+      id="google_gtagjs-js"
+      async=""
+    ></script>
+    <script type="text/javascript" id="google_gtagjs-js-after">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('set', 'linker', { domains: ['kadproz.com'] });
+      gtag('js', new Date());
+      gtag('set', 'developer_id.dZTNiMT', true);
+      gtag('config', 'UA-268062856-1', { anonymize_ip: true });
+      gtag('config', 'G-Y6R1E465TM');
+    </script>
+
+    <!-- End Google Analytics snippet added by Site Kit -->
+
+    <script
+      id="google_gtagjs"
+      src="https://www.googletagmanager.com/gtag/js?id=UA-268062856-1"
+      async="async"
+      type="text/javascript"
+    ></script>
+    <script id="google_gtagjs-inline" type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-268062856-1', {});
+    </script>
+    <link
+      rel="icon"
+      href="https://kadproz.com/wp-content/uploads/2023/05/kadproz-favicon-100x100.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://kadproz.com/wp-content/uploads/2023/05/kadproz-favicon-300x300.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://kadproz.com/wp-content/uploads/2023/05/kadproz-favicon-300x300.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="https://kadproz.com/wp-content/uploads/2023/05/kadproz-favicon-300x300.png"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&family=Syne+Mono&display=swap"
+      rel="stylesheet"
+    /><meta name="generator" content={Astro.generator} />
+
+    <title>KadProz - KadProz Escrow Services</title>
+  </head>
+
+  <body>
+    <Header />
+    <main>
+      <Hero />
+      <WhyUs />
+      <BuyBulk />
+      <TransactSafely />
+      <HowItWorks />
+      <WorldPartnership />
+      <CallToAction />
+      <UseEscrow />
+    </main>
+    <Footer />
+  </body>
 </html>
+
+<style>
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: 'Syne Mono', monospace !important;
+  }
+
+  main {
+    height: 100%;
+    min-height: 100vh;
+  }
+</style>

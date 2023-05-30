@@ -1,0 +1,82 @@
+---
+import Container from './shared/Container.astro';
+---
+
+<footer class="bg-[rgb(4,75,121)] text-gray-300 w-full pb-6">
+  <Container class="">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="py-6">
+        <h3 class="mb-4 text-lg font-bold">Kadproz Escrow</h3>
+        <p>
+          With Kadproz escrow, you can safely make transactions online with no
+          fear or risk.
+        </p>
+      </div>
+
+      <div class="py-6">
+        <h3 class="mb-4 text-lg font-bold">Quick links</h3>
+        <nav class="flex flex-col gap-3">
+          <a href="">Orders</a>
+          <a href="">My Wishlists</a>
+          <a href="">About</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Contract agreements</a>
+        </nav>
+      </div>
+
+      <div class="py-6">
+        <h3 class="mb-4 text-lg font-bold">Support</h3>
+        <nav class="flex flex-col gap-3">
+          <a href="">Frequently Asked Questions (FAQs)</a>
+          <a href="">Terms and Conditions</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Refund Policies</a>
+          <a href="">Return Policies</a>
+        </nav>
+      </div>
+
+      <div class="py-6 contact">
+        <h3 class="mb-4 text-lg font-bold">Contact us</h3>
+        <div class="flex flex-col gap-2">
+          <p>Head office: <span>28 City Road, London, EC1V 2NX, UK</span></p>
+          <p>
+            Kaduna: <span>No 1, Kasupda Building, Ahmadu Bello Way, Kaduna</span
+            >
+          </p>
+          <p>Tel: <span>+234 901 111 6460</span></p>
+          <p>Whatsapp: <span><a href="">+234 901 111 6460</a></span></p>
+          <p>Email: <span><a href="">sales@kadproz.com</a></span></p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col text-sm gap-1 items-start font-bold tracking-wider font-syne mb-6"
+    >
+      <small class="leading-none">RC14801959 (KADPROZ LTD)</small>
+      <small class="leading-none"
+        >RC3508985 (KADPROZ LTD & KADOSTYLZ by ROBOPRO)</small
+      >
+    </div>
+
+    <div class="copyright text-center text-xs border-t-2 pt-4 border-gray-400">
+      &copy; 2023. Kadproz Escrow Services | Your Trusted Escrow Agency & P2P
+      Transaction Enabler. All Rights Reserved.
+    </div>
+  </Container>
+</footer>
+
+<style scoped>
+  p,
+  nav a {
+    @apply text-gray-300 text-sm;
+  }
+
+  .contact p {
+    @apply font-bold text-xs;
+  }
+
+  p span {
+    @apply text-gray-200 font-normal text-sm;
+  }
+</style>

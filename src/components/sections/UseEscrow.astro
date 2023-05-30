@@ -1,0 +1,55 @@
+---
+import Container from '../shared/Container.astro';
+import ImgSrc from '/images/Escrow-supports.png';
+
+const partners = [
+  'ebay.png',
+  'exchange.jpeg',
+  'godaddy.png',
+  'Jiji.png',
+  'nairaland.png',
+  'shopify.png',
+  'uniregistry.webp',
+];
+---
+
+<section class="py-6">
+  <Container class="h-full grid gap-6 items-center text-center justify-center">
+    <h2
+      class="my-7 text-center text-3xl font-syne font-bold md:text-4xl lg:text-5xl"
+    >
+      KadProz is highly recommended by top forums and websites
+    </h2>
+
+    <!-- Add sliders here -->
+
+    <div class="flex overflow-x-scroll gap-6 px-8 py-6 no-scrollbar">
+      {
+        partners.map((partner) => (
+          <div class="w-[180px] h-auto flex-shrink-0 ">
+            <img
+              src={`/images/partners/${partner}`}
+              alt="Partner Logo"
+              class="h-full w-full object-contain"
+            />
+          </div>
+        ))
+      }
+    </div>
+    <!-- end -->
+
+    <button
+      class="w-max mx-auto px-6 bg-blue-700 text-sm rounded-lg py-3 text-white my-4"
+      >Get Started</button
+    >
+  </Container>
+</section>
+
+<style scoped>
+  p {
+    @apply text-base leading-6;
+  }
+
+  .use-escrow {
+  }
+</style>

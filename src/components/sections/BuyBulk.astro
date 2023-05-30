@@ -1,0 +1,41 @@
+---
+import Container from '../shared/Container.astro';
+import BulkImg from '../../../images/Bulk-img.jpeg';
+---
+
+<section>
+  <Container class="h-full grid md:grid-cols-2 gap-6 items-center">
+    <div class="text flex flex-col gap-4 items-start pr-2 py-4">
+      <h2 class="mb-7 text-3xl font-syne font-bold md:text-4xl lg:text-5xl">
+        Buy Bulk Agro-Based Products at the Lowest Prices in Africa
+      </h2>
+      <p class="leading-6">
+        We have created the largest network of farmers and Wholesalers of
+        Agro-based items to ensure that you get good value for your money. We
+        are connecting the Agro-based ecosystem.
+      </p>
+      <p>
+        We hope to exterminate the terminal conundrum of food insecurity,
+        artificial food price inflation, exploitative food price differences,
+        and provide easy access to food and agricultural produce at the right
+        price. We can connect you.
+      </p>
+      <button class="px-6 bg-blue-700 text-sm rounded-lg py-3 text-white mt-4"
+        >Learn more</button
+      >
+    </div>
+    <div class="illustration w-full h-[80%] py-6">
+      <img
+        src={BulkImg}
+        alt=""
+        class="w-full h-full object-cover rounded-3xl"
+      />
+    </div>
+  </Container>
+</section>
+
+<style scoped>
+  p {
+    @apply text-sm leading-6;
+  }
+</style>

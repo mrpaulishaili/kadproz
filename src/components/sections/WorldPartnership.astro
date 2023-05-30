@@ -1,0 +1,27 @@
+---
+import ImgSrc from '/images/Kadproz-world-map.png';
+import Container from '../shared/Container.astro';
+---
+
+<section class="bg-blue-400 h-[calc(90vh)]">
+  <Container class="h-full grid md:grid-cols-2 gap-6 items-center">
+    <div class="text flex flex-col gap-4 items-start pr-6">
+      <h2 class="mb-7 text-3xl font-syne font-bold md:text-4xl lg:text-5xl">
+        In Partnership with the Most Trusted and Best Escrow Service in the
+        World.
+      </h2>
+      <p class="leading-6">
+        It's never safe to buy anything online especially on faceless
+        Marketplaces without Escrow. Hence, the need for a trusted escrow
+        agency. Tested, registered, and trusted, Kadproz provides solution to
+        ease all escrow transactions. Trust me, we truly care.
+      </p>
+      <button class="px-6 bg-blue-700 text-sm rounded-lg py-3 text-white mt-4"
+        >Get Started</button
+      >
+    </div>
+    <div class="illustration w-[90%] h-[70%] py-6">
+      <img src={ImgSrc} alt="" class="w-full h-full object-cover rounded-3xl" />
+    </div>
+  </Container>
+</section>

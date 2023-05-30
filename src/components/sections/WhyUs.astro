@@ -1,0 +1,47 @@
+---
+import bestImg from '../../../images/best.png';
+import CustomerServiceImg from '../../../images/customer-service.png';
+import PaymentImg from '../../../images/payment-method.png';
+import Container from '../shared/Container.astro';
+---
+
+<section>
+  <Container>
+    <div class="grid grid-cols-2 md:grid-cols-4 why-us-tabs">
+      <div class="">
+        <img src={bestImg} alt="" />
+        <small>Use of Best System Infrastructure</small>
+      </div>
+      <div class="">
+        <img src={PaymentImg} alt="" />
+        <small>N500,OOO,OOO+ Transacitons Processed</small>
+      </div>
+      <div class="">
+        <img src={PaymentImg} alt="" />
+        <small>10,000+ Happy Customers</small>
+      </div>
+      <div class="">
+        <img src={CustomerServiceImg} alt="" />
+        <small>Dedicated Responsive Customer Service</small>
+      </div>
+    </div>
+  </Container>
+</section>
+
+<style scoped>
+  .why-us-tabs {
+    @apply py-6;
+  }
+  .why-us-tabs > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    height: 120px;
+    width: 120px;
+    object-fit: contain;
+  }
+</style>

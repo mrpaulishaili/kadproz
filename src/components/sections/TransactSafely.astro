@@ -1,0 +1,38 @@
+---
+import Container from '../shared/Container.astro';
+import ImgSrc from '../../../images/KadProz-nairaland.png';
+---
+
+<section>
+  <Container class="h-full grid md:grid-cols-2 gap-6 items-center">
+    <div class="illustration w-full h-[70%] py-6">
+      <img src={ImgSrc} alt="" class="w-full h-full object-cover rounded-3xl" />
+    </div>
+    <div class="text flex flex-col gap-4 items-start pr-2 py-4">
+      <h2 class="mb-7 text-3xl font-syne font-bold md:text-4xl lg:text-5xl">
+        Transact Safely on Forums and Websites With Kadproz
+      </h2>
+      <p class="leading-6">
+        From computer hardware to luxury goods, you can safely and easily buy
+        and sell merchandise in Africa with the protection of Kadproz.
+      </p>
+      <p>
+        Kadproz to ensure that payment is only released at certain stages or
+        upon full completion of service, or delivery of goods.
+      </p>
+      <p>
+        Use Escrow to assure that money is released only when you're happy with
+        each step, or upon full completion of service.
+      </p>
+      <button class="px-6 bg-blue-700 text-sm rounded-lg py-3 text-white mt-4"
+        >Learn more</button
+      >
+    </div>
+  </Container>
+</section>
+
+<style scoped>
+  p {
+    @apply text-sm leading-6;
+  }
+</style>
